@@ -3,8 +3,42 @@
     margin: px;
     box-sizing: border-box;
 }
+body{
+    background-color: black;
+}
+.step{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width:160px;
+    margin: auto;
+}
+#beg{
+    color: rgb(193, 189, 189);
+    font-weight: 500;
+    font-size: 18px;
+    margin-top: 18px;
+}
 .container{
-    background-color: red;
+    padding: 15px;
+    /* background-color:  hsl(213, 96%, 18%); */
+    background-color:  hsl(217, 100%, 97%);
+    background-image: url(/images/bg-sidebar-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* height: 40rem; */
+    max-width: 375px;
+    margin: 0 auto;
+    margin-top: 30px;
+    font-family: 'ubuntu', sans-serif;
+    border-radius: 4px;
+    padding-top: 30px;
+    margin-bottom: 30px;
+}
+.general{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
 }
 .one{
     width: 30px;
@@ -58,7 +92,10 @@ input:focus{
     background-color: #fff;
     padding: 40px 30px;
     border-radius: 10px;
-    /* margin-top: 33px; */
+    margin-top: 39px;
+}
+.schoolwork{
+    font-size: 30px;
 }
 .person{
     color: hsl(213, 96%, 18%);
@@ -87,5 +124,13 @@ input:focus{
     }
     .person{
         width: 400px;
+    }
+    .step{
+        flex-direction: column;
+        width: -moz-fit-content;
+        width: fit-content;
+        height: 170px;
+        margin: 0px;
+        margin-top: 33px;
     }
 }
